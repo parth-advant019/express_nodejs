@@ -13,7 +13,7 @@ exports.postAddProduct = (req, res, next) => {
   const imageUrl = req.body.imageUrl;
   const price = req.body.price;
   const description = req.body.description;
-  //sequelize method for add user into insert data
+  //sequelize magic method for add user into insert data
   req.user
     .createProduct({
       title: title,
